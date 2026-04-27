@@ -1,0 +1,51 @@
+/* Titolo principale */
+h1 {
+  width: fit-content; /* si adatta al contenuto */
+  margin: 0 auto; /* centra il titolo */
+  color: red; /* colore rosso */
+  margin-bottom: 50px; /* spazio sotto */
+}
+
+/*  Paragrafi generali */
+p {
+  text-align: center;
+  font-weight: bold;
+  margin: 0 50px 50px; /* sinistra, destra, sotto */
+}
+
+/* Container delle card */
+.container {
+  display: flex; /* attiva flexbox , senza uno sotto l'altro*/
+  flex-wrap: wrap; /* va a capo se non c'è spazio */
+  justify-content: center; /* centra le card */
+  gap: 20px; /* spazio tra le card */
+}
+
+/* Singola card */
+.content-box {
+  display: inline-block; /* comporta come blocco ma in linea */
+  width: 300px; /* larghezza fissa */
+  margin: 20px 10px; /* spazio esterno */
+  padding: 20px; /* spazio interno */
+  border: 1px solid #ccc; /* bordo grigio */
+  border-radius: 10px; /* angoli arrotondati */
+  background-color: darksalmon; /* colore sfondo */
+
+  text-align: justify; /* testo giustificato */
+  font-weight: bold; /* grassetto */
+}
+
+/* Immagini dentro le card */
+.content-box img {
+  width: 100%; /* occupa tutta la larghezza della card */
+  height: 200px; /* altezza fissa */
+  object-fit: contain; /* mostra tutta l'immagine senza tagliarla */
+  background-color: #fff; /* sfondo bianco se resta spazio */
+}
+a:hover {
+  opacity: 0.2;
+  background-color: rgb(251, 255, 0);
+}
+p {
+  text-align: center;
+}
