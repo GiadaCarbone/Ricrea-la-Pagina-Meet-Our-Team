@@ -31,17 +31,24 @@ p {
   border-radius: 10px; /* angoli arrotondati */
   background-color: darksalmon; /* colore sfondo */
 
-  text-align: justify; /* testo giustificato */
+  text-align: left; /* utile se l’immagine è inline */
   font-weight: bold; /* grassetto */
 }
 
-/* Immagini dentro le card */
-.content-box img {
-  width: 100%; /* occupa tutta la larghezza della card */
-  height: 200px; /* altezza fissa */
-  object-fit: contain; /* mostra tutta l'immagine senza tagliarla */
-  background-color: #fff; /* sfondo bianco se resta spazio */
+.content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* tutto a sinistra */
+  gap: 10px;
 }
+
+.content-box img {
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+  display: block;
+}
+
 a:hover {
   opacity: 0.2;
   background-color: rgb(251, 255, 0);
